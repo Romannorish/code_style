@@ -1,8 +1,3 @@
-// base
 @import './Base/reset';
 @import './Base/container';
-@import './Base/normalize';
-@import './modal_window/modal-window';
-
-// content
-@import './content/content';
+@import './Base/content';
