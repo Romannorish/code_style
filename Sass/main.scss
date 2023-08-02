@@ -1,3 +1,10 @@
+// base
 @import './Base/reset';
 @import './Base/container';
-@import './Base/content';
+
+// main
+@import './Main/main-header';
+
+
+// omega
+@import './Omega/omega.scss';

@@ -34,57 +34,9 @@ img {
   margin-right: auto;
 }
 
-.box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.title {
-  color: white;
-}
-
-.btn {
-  padding: 10px;
-  background-color: rgb(73, 73, 198);
-  border-radius: 10px;
-  -webkit-animation-name: blue_circle;
-          animation-name: blue_circle;
-  animation-direction: alternate-reverse;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-.btn:hover, .btn:focus {
-  background-color: red;
-}
-
-@-webkit-keyframes blue_circle {
-  0% {
-    padding: 10px;
-    background-color: rgb(73, 73, 198);
-    border-radius: 10px;
-  }
-  100% {
-    padding: 15px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-}
-
-@keyframes blue_circle {
-  0% {
-    padding: 10px;
-    background-color: rgb(73, 73, 198);
-    border-radius: 10px;
-  }
-  100% {
-    padding: 15px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
+.wrap {
+  width: 1020px;
+  height: 300px;
+  outline: 1px solid tomato;
+  background: url("/img/brands.png") 0 0 no-repeat fixed;
 }/*# sourceMappingURL=main.css.map */
