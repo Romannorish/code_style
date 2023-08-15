@@ -1,12 +1,5 @@
 
 
-.wrap{
-    width: 1020px;
-    height: 300px;
-    outline:  1px solid tomato;
-    background: url('/img/brands.png') 0 0 no-repeat fixed;
-}
-
 
 // =========================================================
 
@@ -18,20 +11,30 @@
 // .button-video{
 //     margin-top:20px;
 //     margin-bottom:50px;
-//     border-radius:10px;
+//     border-radius:15px;
 //     background-color:#002f87;
    
 
+// }
+
+// .title-btn{
+//     text-decoration: none;
 // }
     
 //     .button-video:hover,
 //     .button-video:focus{
 //         -webkit-transform:scale(1.1);
 //         transform:scale(1.1);
-//         -webkit-transition:all .2s ease;
-//         transition:all .2s ease}
+//         -webkit-transition:all 0.5s ease;
+//         transition:all 0.5s ease
+//     }
 //     .title-btn{
-//             padding:5px;color:#fff;
+//         text-decoration: none;
+//             padding:10px;color:#fff;
+//             &:hover,
+//             &:focus{
+//                 color: deepskyblue;
+//             }
 //             animation-name: breath;
 //             animation-duration: 1.5s;
 //             animation-timing-function: ease-in-out;
@@ -63,45 +66,33 @@
 
 
 // перелік запчастин
+// @media (max-width:768px) {
+//     padding-top: 0;
+//     }
+//     @media screen and (min-width:769px) and (max-width:1020px){
+//     padding-top: 30px;
+//     }
+//     @media screen and (min-width:1021px) {
+//     padding-top: 60px
+//     }
+
+
+
 
 // .parts-wrapper{
-//     width:300px;
-//     padding-top: 60px;
-//     @media (max-width:768px) {
-//     margin: 0;
-//     }
-//     outline: 1px solid green;
+//     max-width:300px;
 // }
-
-// .parts-list{
-//     display:block;
-//     -webkit-box-pack:center;
-//     -ms-flex-pack:center;
-//     justify-content:center;
-//     text-align:center;
-//     -webkit-box-align:center;-ms-flex-align:center;align-items:center;
-//     text-align:left}
-
-// .parts-item{max-width: 100vw;
-//     border-radius:10px;
-//     font-weight:400;
-//     background-color:#002f87;
-//     color:#fff;
-//     margin-top:2px;
-// &:hover,
-// &:focus{
-//     transform: scale(1.1);
-//     transition: all 0.1s ease;
+// @media(max-width: 768px){
+//     .parts-wrapper{padding:0}
 // }
-
+// @media(min-width: 769px) and (max-width: 1199px){
+//     .parts-wrapper{padding:20px}
 // }
-//     .parts-link{
-//         text-decoration: none;
-//         color: #fff;
-//     }
-
-
-
+// @media(min-width:1199px) {
+//     .parts-wrapper{padding:20px;
+//     max-width: 380px;}
+// }
+//     .parts-list{display:block;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left}.parts-item{max-width:100vw;border-radius:10px;font-weight:400;background-color:#002f87;color:#fff;margin-top:2px}.parts-item:hover,.parts-item:focus{-webkit-transform:scale(1.1);transform:scale(1.1);-webkit-transition:all .1s ease;transition:all .1s ease}.parts-link{text-decoration:none;color:#fff}/*# sourceMappingURL=omega.min.css.map */
 
 
 // ========================================================
@@ -112,7 +103,6 @@
 // .helper{
 //     display: inline-block;
 //     vertical-align: middle;
-//     margin-top: 100px;
 //     outline: 1px solid tomato ;
 //     width:300px;
 //     &:hover,
@@ -120,6 +110,14 @@
 //     transform: scale(1.1);
 //     transition: all 0.2s ease;
 //     }
+
+//     @include mq('tablet'){
+//         margin-top: 100px;
+//     }
+//     @include mq('desktop'){
+//         margin-top: 85px;
+//     }
+    
 // }
 // .help-title{
 //     text-align: center;
@@ -139,17 +137,25 @@
 //     width: 310px;
 
 // }
+// .link-dostavka{
+//     text-decoration: none;
 
+// }
 
 // .text-dostavka {
+    
 //     text-align: center;
-//    padding-top: 80px;
+//    padding-top: 100px;
+// @include mq('mobile-only'){
+//     padding: 0;
+// }
+// @include mq('tablet-only'){
+//     padding-top: 110px;
+// }
+// @include mq('desktop'){
+//     padding-top: 100px;
+// }
 
-//     @media (max-width:768px) {
-//         padding: 0;
-//     }
-//  text-decoration: none;
-//  list-style: none;
 //  color: #002F87;
 //  &:hover,
 //  &:focus{
@@ -168,7 +174,16 @@
 
 // .boxers {
 //     width: 350px; 
-//     margin-top: 60px;
+    
+//     @include mq('mobile-only'){
+//             margin: 0;
+//         }
+//         @include mq('tablet-only'){
+//             margin-top: 80px;
+//         }
+//         @include mq('desktop'){
+//             margin-top: 60px;
+//         }
 //     &:hover,
 //     &:focus{
 //     transform: scale(1.1);
